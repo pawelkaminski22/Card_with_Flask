@@ -20,6 +20,8 @@ def contact_post():
     if request.method == 'POST':
         print("We received POST")
         print(request.form)
-        return redirect("/")
+        return redirect("/mypage/contact")
 
 
+if __name__ == '__main__':
+    app.run()
